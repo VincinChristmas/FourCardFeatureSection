@@ -1,0 +1,250 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex: 1 1 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*
+    the main css
+  */
+
+  main {
+    align-items: center;
+    padding: 5rem 2rem;
+    
+  }
+
+  /*
+    the intro
+  */
+  .introFirst {
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: #93929A;
+  }
+
+  .introSecond {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+
+  .introParagraph {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    color: #B6B6B9;
+    font-size: 0.9375rem;
+  }
+
+  /*
+    the SuperVisor card
+  */
+
+  .theSupervisor {
+    display: flex;
+    border-top: 6px solid hsl(180, 62%, 55%);
+    padding: 1.733rem;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 1px 15px 20px  #DDE5F0;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .theSupervisor > h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.432rem;
+  }
+
+  .theSupervisor > p {
+    color: #B6B6B9;
+    font-size: 0.9375rem;
+  }
+
+  .theSupervisor > img {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
+  /*
+    The Team Card
+  */
+
+  .theTeam {
+    display: flex;
+    border-top: 6px solid hsl(0, 78%, 62%);
+    padding: 1.733rem;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 1px 15px 20px  #DDE5F0;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .theTeam > h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.432rem;
+  }
+
+  .theTeam > p {
+    color: #B6B6B9;
+    font-size: 0.9375rem;
+  }
+
+  .theTeam > img {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
+  /*
+    The Karma card
+  */
+
+  .theKarma {
+    display: flex;
+    border-top: 6px solid hsl(34, 97%, 64%);
+    padding: 1.733rem;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 1px 15px 20px  #DDE5F0;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .theKarma > h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.432rem;
+  }
+
+  .theKarma> p {
+    color: #B6B6B9;
+    font-size: 0.9375rem;
+  }
+
+  .theKarma > img {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
+  /*
+    The Calculator card
+  */
+
+  .theCalculator {
+    display: flex;
+    border-top: 6px solid hsl(212, 86%, 64%);
+    padding: 1.733rem;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 1px 15px 20px  #DDE5F0;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .theCalculator > h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.432rem;
+  }
+
+  .theCalculator > p {
+    color: #B6B6B9;
+    font-size: 0.9375rem;
+  }
+
+  .theCalculator > img {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
+  /*
+    the media query
+  */
+
+  @media all and (min-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  .intro {
+    text-align: center;
+    width: 33rem;
+  }
+
+  .theSupervisor, .theKarma, .theTeam, .theCalculator {
+    width: 19.458125rem;
+  }
+
+  .theSupervisor {
+    align-self: center;
+  }
+
+  .theCalculator {
+    align-self: center;
+  }
+
+  .theBlocks {
+    display: flex;
+  }
+
+  .theColumn {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+}
+
+
